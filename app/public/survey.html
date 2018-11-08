@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CO-OP Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT"
+        crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -18,166 +19,166 @@
             <p class="text-center">Need a gamer buddy to go on quests with that has the same mindset?</p><br>
         </div>
         <div class="container">
-                <h1>Survey</h1>
+            <h1>Survey</h1>
+            <hr>
+            <form class="form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image URL</label>
+                    <input type="text" class="form-control" id="image" required>
+                </div>
                 <hr>
-                <form class="form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="image">Image URL</label>
-                        <input type="text" class="form-control" id="image" required>
-                    </div>
-                    <hr>
-                    <h2>Select how much you agree with the following statements.</h2>
-                    <div class="form-group">
-                        <label for="q1" class="lead">You like exploring and taking your time in virtual worlds</label>
-                        <select id="q1" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q2" class="lead">You don't feel like playing objective all the time</label>
-                        <select id="q2" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q3" class="lead">You feel like you are carrying your teammates most of the time</label>
-                        <select id="q3" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q4" class="lead">You hardly stray from the main questline.</label>
-                        <select id="q4" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q5" class="lead">Dying in a multiplayer game rarely upsets you</label>
-                        <select id="q5" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q6" class="lead">You enjoy playing creative building games than action oriented ones</label>
-                        <select id="q6" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q7" class="lead">You enjoy more difficult games that are very unforgiving</label>
-                        <select id="q7" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q8" class="lead">You like puzzle games and thinking logically</label>
-                        <select id="q8" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q9" class="lead">You like to play on a couch rather than on a computer chair</label>
-                        <select id="q9" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <div class="form-group">
-                        <label for="q10" class="lead">You rather try to mod and improve the original game.</label>
-                        <select id="q10" class="form-control" required>
-                            <option value="" selected disabled>Please select</option>
-                            <option value="1">1 (Strongly Disagree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Strongly Agree)</option>
-                        </select>
-                    </div>
-                    <br />
-                    <button type="button" id="submit" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#modal"><i class="fa fa-check-square" aria-hidden="true"></i> Submit</button>
-                </form>
+                <h2>Select how much you agree with the following statements.</h2>
+                <div class="form-group">
+                    <label for="q1" class="lead">You like exploring and taking your time in virtual worlds</label>
+                    <select id="q1" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
                 <br />
-                <footer class="footer">
-                    <div class="container">
-                        <p><a href="/api/friends" target='_blank'>API Friends List</a></p>
+                <div class="form-group">
+                    <label for="q2" class="lead">You don't feel like playing objective all the time</label>
+                    <select id="q2" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="q3" class="lead">You feel like you are carrying your teammates most of the time</label>
+                    <select id="q3" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="q4" class="lead">You hardly stray from the main questline.</label>
+                    <select id="q4" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="q5" class="lead">Dying in a multiplayer game rarely upsets you</label>
+                    <select id="q5" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="q6" class="lead">You enjoy playing creative building games than action oriented ones</label>
+                    <select id="q6" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="q7" class="lead">You enjoy more difficult games that are very unforgiving</label>
+                    <select id="q7" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="q8" class="lead">You like puzzle games and thinking logically</label>
+                    <select id="q8" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="q9" class="lead">You like to play on a couch rather than on a computer chair</label>
+                    <select id="q9" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="q10" class="lead">You rather try to mod and improve the original game.</label>
+                    <select id="q10" class="form-control" required>
+                        <option value="" selected disabled>Please select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <br />
+                <button type="button" id="submit" class="btn btn-success btn-lg btn-block" data-toggle="modal"
+                    data-target="#modal"><i class="fa fa-check-square" aria-hidden="true"></i> Submit</button>
+            </form>
+            <br />
+            <footer class="footer">
+                <div class="container">
+                    <p><a href="/api/friends" target='_blank'>API Friends List</a></p>
+                </div>
+            </footer>
+        </div>
+        <div class="modal fade" id="modal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
                     </div>
-                </footer>
-            </div>
-            <div class="modal fade" id="modal" role="dialog">
-                <div class="modal-dialog modal-sm">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title"></h4>
-                        </div>
-                        <div class="modal-body"></div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
-            // declare global variables
+        </div>
+        <script type="text/javascript">
             var nameVal, imageVal, q1Val, q2Val, q3Val, q4Val, q5Val, q6Val, q7Val, q8Val, q9Val, q10Val, newPerson;
-            $('#submit').on('click', function(event) {
+            $('#submit').on('click', function (event) {
                 // set global variable values 
                 nameVal = $('#name').val();
                 imageVal = $('#image').val();
@@ -197,22 +198,24 @@
                     responses: [q1Val, q2Val, q3Val, q4Val, q5Val, q6Val, q7Val, q8Val, q9Val, q10Val],
                     total: q1Val + q2Val + q3Val + q4Val + q5Val + q6Val + q7Val + q8Val + q9Val + q10Val
                 };
-                // declare and set local variables
+                // set modal variables and friends route variable
                 var modalTitle = $('.modal-title');
                 var modalBody = $('.modal-body');
                 var modal = $('#modal');
                 var apiFriendsRoute = '/api/friends';
+
+                // checks that all questions are answered then calls makeMatch for the check against the new person
                 if (formIsValid()) {
-                    $.get(apiFriendsRoute, function(data) {
+                    $.get(apiFriendsRoute, function (data) {
                         var match = makeMatch(data);
                         if (match.name !== undefined) {
                             modalTitle.text('You have a match!');
-                            modalBody.html('<p class="strong">You\'re most compatible with:</p><p>' + match.name + '</p><img src="' + match.image + '" height="80">');
+                            modalBody.html('<p class="strong">You\'re best gaming buddy is:</p><p>' + match.name + '</p><img src="' + match.image + '" height="120">');
                         } else {
                             modalTitle.text('Too few friends');
                             modalBody.text('Sorry, there are too few friends to match you with.');
                         }
-                    }).then(function() {
+                    }).then(function () {
                         modal.show();
                         $('.form')[0].reset();
                         $.post(apiFriendsRoute, newPerson);
@@ -231,7 +234,7 @@
                 var difference = 50;
                 var minName;
                 var minImage;
-                data.forEach(function(person) {
+                data.forEach(function (person) {
                     var localDiff = Math.abs(newPerson.total - person.total);
                     if (localDiff < difference) {
                         difference = localDiff;
@@ -244,7 +247,7 @@
                     image: minImage
                 };
             }
-            </script>
+        </script>
     </div>
 
 </body>
