@@ -177,28 +177,29 @@
             </div>
         </div>
         <script type="text/javascript">
-            var nameVal, imageVal, q1Val, q2Val, q3Val, q4Val, q5Val, q6Val, q7Val, q8Val, q9Val, q10Val, newPerson;
+            var name, image, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, newPerson;
             $('#submit').on('click', function (event) {
                 // set global variable values 
-                nameVal = $('#name').val();
-                imageVal = $('#image').val();
-                q1Val = parseInt($('#q1').val());
-                q2Val = parseInt($('#q2').val());
-                q3Val = parseInt($('#q3').val());
-                q4Val = parseInt($('#q4').val());
-                q5Val = parseInt($('#q5').val());
-                q6Val = parseInt($('#q6').val());
-                q7Val = parseInt($('#q7').val());
-                q8Val = parseInt($('#q8').val());
-                q9Val = parseInt($('#q9').val());
-                q10Val = parseInt($('#q10').val());
+                name = $('#name').val();
+                image = $('#image').val();
+                q1 = parseInt($('#q1').val());
+                q2 = parseInt($('#q2').val());
+                q3 = parseInt($('#q3').val());
+                q4 = parseInt($('#q4').val());
+                q5 = parseInt($('#q5').val());
+                q6 = parseInt($('#q6').val());
+                q7 = parseInt($('#q7').val());
+                q8 = parseInt($('#q8').val());
+                q9 = parseInt($('#q9').val());
+                q10 = parseInt($('#q10').val());
                 newPerson = {
-                    name: nameVal,
-                    image: imageVal,
-                    responses: [q1Val, q2Val, q3Val, q4Val, q5Val, q6Val, q7Val, q8Val, q9Val, q10Val],
-                    total: q1Val + q2Val + q3Val + q4Val + q5Val + q6Val + q7Val + q8Val + q9Val + q10Val
+                    name: name,
+                    image: image,
+                    responses: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10],
+                    total: q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 + q10
                 };
-                // set modal variables and friends route variable
+
+
                 var modalTitle = $('.modal-title');
                 var modalBody = $('.modal-body');
                 var modal = $('#modal');
@@ -227,17 +228,17 @@
                 }
             });
             function formIsValid() {
-                return (nameVal !== '' && imageVal !== '' && !isNaN(q1Val) && !isNaN(q2Val) && !isNaN(q3Val) && !isNaN(q4Val) &&
-                    !isNaN(q5Val) && !isNaN(q6Val) && !isNaN(q7Val) && !isNaN(q8Val) && !isNaN(q9Val) && !isNaN(q10Val));
+                return (name !== '' && image !== '' && !isNaN(q1) && !isNaN(q2) && !isNaN(q3) && !isNaN(q4) &&
+                    !isNaN(q5) && !isNaN(q6) && !isNaN(q7) && !isNaN(q8) && !isNaN(q9) && !isNaN(q10));
             }
             function makeMatch(data) {
-                var difference = 50;
+                var maxDifference = 50;
                 var minName;
                 var minImage;
                 data.forEach(function (person) {
                     var localDiff = Math.abs(newPerson.total - person.total);
-                    if (localDiff < difference) {
-                        difference = localDiff;
+                    if (localDiff < maxDifference) {
+                        maxDifference = localDiff;
                         minName = person.name;
                         minImage = person.image;
                     }
